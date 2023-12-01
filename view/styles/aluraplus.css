@@ -1,0 +1,257 @@
+@import url(./global.css);
+@import url(./components/footer.css);
+
+/* BANNER */
+
+.section__banner {
+    width: 100%;
+    height: 680px;
+    background: url(../../assets/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.container__signature {
+    width: 100%;
+    max-width: 588px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin-left: 8rem;
+    padding-right: 2rem;
+}
+
+.wrapper__signature__info {
+    width: 100%;
+    max-width: 512px;
+}
+
+.list__signature__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 54px;
+    margin-bottom: 10px;
+}
+
+.wrapper__signature__info .img__logo__combo {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.title__signature {
+    font-size: 1.75rem;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.text__signature__observation {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--gray-color-dark);
+}
+
+/* BANNER */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+main.container {
+    margin-bottom: 146px;
+}
+
+.advantage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.img__advantage {
+    width: 100%;
+    max-width: 469px;
+}
+
+.button.-advantage {
+    width: 32%;
+}
+
+
+
+.section__favorite__devices {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 24px;
+}
+
+.list__favorite__devices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.wrapper__favorite__device {
+    width: 100%;
+    max-width: 338px;
+    margin-bottom: 16px;
+}
+
+
+.wrapper__favorite__device img {
+    width: 100%;
+}
+
+.wrapper__favorite__device p {
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    html {
+        font-size: 114%;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 87%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .button.-advantage {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .section__banner {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+            url(../../assets/img/Background.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 100%;
+        background-size: 170%;
+        display: flex;
+    }
+
+    .container__signature {
+        margin-left: 0;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 885px) {
+    html {
+        font-size: 100%;
+    }
+
+    main {
+        gap: 100px;
+    }
+
+    .advantage {
+        text-align: center;
+        gap: 4rem;
+        padding: 32px;
+    }
+
+    .button.-advantage {
+        margin: 0 auto;
+    }
+
+    .img__advantage {
+        width: 85%;
+    }
+
+    .list__favorite__devices {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+    main {
+        gap: 100px;
+    }
+
+    .section__banner {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .advantage {
+        grid-template-columns: 1fr;
+    }
+
+    .img__advantage {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .button.-advantage {
+        width: 100%;
+    }
+
+    .wrapper__favorite__device {
+        max-width: 100%;
+    }
+
+
+    footer {
+        align-items: flex-start;
+        justify-content:flex-start;
+        text-align: left;
+        background-color: #161616;
+        padding-top: 32px;
+    }
+
+
+
+    .logo__alura_footer {
+        margin: 0 auto 50px auto;   
+    }
+
+    .menu__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

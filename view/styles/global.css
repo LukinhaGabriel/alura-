@@ -1,0 +1,89 @@
+@import url(./variables.css);
+@import url(./components/scrollbar.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
+
+
+body{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+span{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button{
+    border-radius: 8px;
+    background-color: var(--call-to-action);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button:hover{
+   background-color: var(--call-to-action-hover);
+}
+
+.button.-outline{
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--second-color);
+}
+
+.button.-outline:hover{
+    border: 1px solid var(--call-to-action);
+    color: var(--call-to-action);
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+    color: var(--second-color);
+    margin-bottom: 8px;
+}
+
+.paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--gray-color-ligth);
+    margin-bottom: 16px;
+}

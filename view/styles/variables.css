@@ -1,0 +1,10 @@
+:root{
+    --primary-color: #00030C; 
+    --second-color: #FFFFFF;
+    --gray-color-ligth: #F9F9F9; 
+    --gray-color-dark: #C0C0C0;
+    --call-to-action: #167BF7; 
+    --call-to-action-hover: #2a87fa; 
+
+    --primary-font: "Inter", sans-serif;
+}
